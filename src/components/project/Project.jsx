@@ -14,7 +14,7 @@ function Project({project}) {
           {project.desc}
         </p>
         <button className="projLink">
-          {<a href={project.git} target="_blank">Github</a>}
+          {<a href={project.links} target="_blank">{!project.certification ? "Github" : "Certificate"}</a>}
         </button>
       </div>
     </>

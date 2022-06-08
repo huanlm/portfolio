@@ -9,7 +9,7 @@ function Contact() {
   return (
     <div className="contactPage">
       <h1 className="contactTitle">
-        Contact
+        Contact Me
       </h1>
       <div className="contactContainer">
         <form className="contactForm">
