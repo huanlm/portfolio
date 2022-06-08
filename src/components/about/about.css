@@ -1,0 +1,40 @@
+.aboutPage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.abTitle {
+  font-size: 3.5rem;
+}
+
+.about {
+  width: 85%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills > button {
+  border-color: var(--text-color);
+  background-color: var(--background-color);
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.aboutInfo {
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.images {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
