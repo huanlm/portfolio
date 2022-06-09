@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 100px;
+  margin-bottom: 50px;
   box-sizing: border-box;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .projects{
-  width: 85%;
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: row;

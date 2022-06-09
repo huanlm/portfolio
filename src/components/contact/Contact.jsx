@@ -7,7 +7,7 @@ function Contact() {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   return (
-    <div className="contactPage">
+    <div className="contactPage" id="contact">
       <h1 className="contactTitle">
         Contact Me
       </h1>

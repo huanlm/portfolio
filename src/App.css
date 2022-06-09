@@ -1,9 +1,13 @@
 :root {
-  --background-color: #E7ECEF;
-  --text-color: #272932;
-  --forground-color: #0F7173;
+  --background-color: #0a1316;
+  --text-color: #ffffff;
+  --forground-color: #ffffff43;
   --content-max-width: 1024px;
-  --section-max-height: 90vh
+  --section-max-height: 90vh;
+}
+
+* {
+  scroll-behavior: smooth;
 }
 
 .App {
@@ -17,4 +21,27 @@
   align-items: center;
   flex-direction: column;
   box-sizing: border-box;
+}
+
+.separator {
+  width: 300px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.428);
+}
+
+.goTopButton {
+  position: fixed;
+  bottom: 5px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: none;
+  font-size: 4rem;
+  color: var(--text-color); 
+  transition: 0.3s;
+}
+
+.goTopButton:hover {
+  transform: scale(1.1);
 }

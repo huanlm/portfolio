@@ -2,7 +2,6 @@ import React from 'react'
 import './project.css'
 
 function Project({project}) {
-  console.log(project.images[0])
   return (
     <>
       <div className="projCard">
@@ -13,6 +12,13 @@ function Project({project}) {
         <p className="projDesc">
           {project.desc}
         </p>
+        <div className="projTechs">
+          {
+            project.techs.map((item) => (
+              <span>{item}</span>
+            ))
+          }
+        </div>
         <button className="projLink">
           {<a href={project.links} target="_blank">{!project.certification ? "Github" : "Certificate"}</a>}
         </button>

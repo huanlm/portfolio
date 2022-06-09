@@ -9,6 +9,7 @@ function Portfolio() {
       desc:"Full stack project made by group of 10 students.",
       links:"https://github.com/huanlm/ASAP",
       images: ['../../images/homeCover.jpg'],
+      techs: ["Python", "JavaScript", "HTML", "MySQL"]
     },
     {
       name:"Front End Certification",
@@ -16,6 +17,7 @@ function Portfolio() {
       links:"https://www.freecodecamp.org/certification/fcc74f642bb-d7b6-4a9c-9529-45ef6889d867/front-end-development-libraries",
       images: ['../../images/homeCover.jpg'],
       certification: true,
+      techs: ["React", "Bootstrap", "Javascript", "CSS"]
     },
     {
       name:"Back End and APIs Certification",
@@ -23,17 +25,19 @@ function Portfolio() {
       links:"https://www.freecodecamp.org/certification/fcc74f642bb-d7b6-4a9c-9529-45ef6889d867/back-end-development-and-apis",
       images: ['../../images/homeCover.jpg'],
       certification: true,
+      techs: ["NodeJS", "CRUD", "Express", "MongoDB"]
     },
     {
       name:"Hotels Clone",
       desc:"MERN stack project that simulate hotels.com site. I learnt many things from this project including itermediate and advance features of React.",
       links:"https://github.com/huanlm/Hotels-Clone-App",
       images: ['../../images/homeCover.jpg'],
+      techs: ["MongoDB", "Express", "React", "NodeJS"]
     },
   ]
   return (
-    <div className="projPage">
-      <h1 className="projSectTitle">Projects</h1>
+    <div className="projPage" id="portfolio">
+      <h1 className="projSectTitle">Things I've done</h1>
       <div className="projects">
         {projects.map((item) => (
           <Project project={item} />

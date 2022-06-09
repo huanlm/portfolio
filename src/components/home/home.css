@@ -7,12 +7,17 @@
 }
 
 .homeInfo{
-  text-align: center;
+  text-align: left;
 }
 
-.homeInfo > h1 {
-  font-size: 7rem
+.homeName {
+  font-size: 6.5rem;
+  margin: 0;
 }
-.homeInfo > h3 {
-  font-size: 4rem
+.homeSmallText {
+  font-size: 1.5rem;
+}
+.homeStatement {
+  font-size: 3.5rem;
+  margin: 0;
 }
