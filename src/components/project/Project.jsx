@@ -1,5 +1,5 @@
 import React from 'react'
-import './project.css'
+import './project.scss'
 
 function Project({project}) {
   return (
@@ -8,19 +8,22 @@ function Project({project}) {
         <h3 className="projTitle">
           {project.name}
         </h3>
-        <img className="projImg" src={project.images[0]} alt="" />
-        <p className="projDesc">
-          {project.desc}
-        </p>
+        
         <div className="projTechs">
           {
-            project.techs.map((item) => (
-              <span>{item}</span>
+            project.techs.map((item, key) => (
+              <span key={key}>{item}</span>
             ))
           }
         </div>
+        <div className="projImg">
+          <img src={project.images[0]} alt="none" />
+        </div>
+        <p className="projDesc">
+          {project.desc}
+        </p>
         <button className="projLink">
-          {<a href={project.links} target="_blank">{!project.certification ? "Github" : "Certificate"}</a>}
+          {<a href={project.links} rel="noreferrer" target="_blank">{!project.certification ? "Github" : "Certificate"}</a>}
         </button>
       </div>
     </>

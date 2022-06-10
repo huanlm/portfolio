@@ -10,14 +10,16 @@
 
 .abTitle {
   font-size: 3.5rem;
+  margin-bottom: 100px;
 }
 
 .about {
-  width: 50%;
+  width: 80%;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .skills {
@@ -25,6 +27,7 @@
   justify-content: center;
   align-items: flex-start;
   box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 .technologies, .languages{
@@ -50,6 +53,7 @@
 .aboutInfo {
   flex: 1;
   box-sizing: border-box;
+  margin-bottom: 50px;
 }
 
 .images {
@@ -57,4 +61,10 @@
   justify-content: center;
   align-items: center;
   flex: 1;
+}
+
+@media only screen and (max-width: 480px) {
+  .technologies > button , .languages > button {
+    font-size: small;
+  }
 }

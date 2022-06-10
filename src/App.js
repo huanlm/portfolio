@@ -7,11 +7,19 @@ import Navbar from './components/navbar/Navbar';
 import Portfolio from './components/portfolio/Portfolio';
 import { BsFillArrowUpCircleFill } from 'react-icons/bs';
 import { useEffect, useState } from 'react';
+import Particles from "react-tsparticles";
+import {loadFull} from "tsparticles";
+import {particles} from "./utils/particle.js"
 
 function App() {
   const hasWindow = typeof window !== 'undefined'
-  const [opacity, setOpacity] = useState(1)
-  function handleElementsOnScroll() {
+  const [opacity, setOpacity] = useState(0)
+
+  const handleInit = async (main) => {
+    await loadFull(main)
+  }
+
+  const handleElementsOnScroll = () => {
     window.onscroll = () => {
       let currentScrollPos = window.pageYOffset
 
@@ -28,19 +36,23 @@ function App() {
       handleElementsOnScroll()
     }
   }, [hasWindow])
+
   return (
+    <>
+    <Particles id="particles" options={particles} init={handleInit}/>
     <div className="App">
       <Navbar />
       <Home/>
-      <About/>
+      <div className="section"><About/></div>
       <div className='separator'></div>
-      <Experience/>
+      <div className="section"><Experience/></div>
       <div className='separator'></div>
-      <Portfolio/>
+      <div className="section"><Portfolio/></div>
       <div className='separator'></div>
-      <Contact/>
+      <div className="section"><Contact/></div>
       <button className="goTopButton" style={{ opacity }} onClick={()=>{window.scrollTo(0, 0)}}><BsFillArrowUpCircleFill/></button>
     </div>
+    </>
   );
 }
 

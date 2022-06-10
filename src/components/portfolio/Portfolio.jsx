@@ -1,6 +1,6 @@
 import React from 'react'
 import Project from '../project/Project'
-import './portfolio.css'
+import './portfolio.scss'
 
 function Portfolio() {
   const projects = [
@@ -39,8 +39,8 @@ function Portfolio() {
     <div className="projPage" id="portfolio">
       <h1 className="projSectTitle">Things I've done</h1>
       <div className="projects">
-        {projects.map((item) => (
-          <Project project={item} />
+        {projects.map((item, key) => (
+          <Project project={item} key={key}/>
         ))}
       </div>
     </div>

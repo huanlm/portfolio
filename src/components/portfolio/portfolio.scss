@@ -1,6 +1,5 @@
 .projPage {
   width: 100%;
-  height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,6 +10,8 @@
 
 .projSectTitle {
   font-size: 3.5rem;
+  margin-bottom: 100px;
+  text-align: center;
 }
 
 .projects{

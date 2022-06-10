@@ -1,0 +1,72 @@
+:root {
+  --nav-color: rgb(16, 17, 19);
+}
+
+.navContainer {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: var(--nav-color);
+}
+
+.navButton {
+  font-size: 1.7rem;
+  margin: 30px;
+  padding: 2px;
+  text-decoration: none;
+  border-radius: 10px;
+  border: none;
+  background: none;
+  transition: 0.3s;
+  color: var(--text-color);
+  &:hover {
+    border-bottom: solid var(--text-color) 6px; 
+  }
+}
+
+.hamMenu {
+  display: none;
+}
+
+.menuButton {
+  display: none;
+  width:fit-content;
+  height:fit-content;
+  font-size: 2.5rem;
+  color: var(--text-color);
+  background-color: transparent;
+  border: none;
+  position: relative;
+  margin-left: auto;
+  right: 15px;
+}
+
+@media only screen and (max-width: 780px) {
+  .navItems {
+    display: none;
+  }
+  .menuButton {
+    display: flex;
+    z-index: 1;
+  }
+  
+  .hamMenu {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: top;
+    flex-direction: column;
+    position: fixed;
+    top: 10;
+    right: -100%;
+    transition: 0.3s;
+    background-color: var(--nav-color);
+    &.open {
+      right: 0;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './contact.css'
+import './contact.scss'
 
 function Contact() {
   const [name, setName] = useState("");
@@ -24,7 +24,7 @@ function Contact() {
           <input
             value={email}
             onChange={e => setEmail(e.target.value)}
-            placeholder="Email address"
+            placeholder="Email"
             type="email"
             name="email"
             required

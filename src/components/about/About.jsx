@@ -1,14 +1,11 @@
 import React from 'react'
-import './about.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import './about.scss'
 import {FaReact , FaHtml5, FaCss3Alt, FaNodeJs, FaNpm, FaGithub, FaJava, FaPython} from 'react-icons/fa'
-import {DiNpm, DiMongodb, DiMysql, DiJavascript} from 'react-icons/di'
+import {DiMongodb, DiMysql, DiJavascript} from 'react-icons/di'
 import {SiFastapi} from 'react-icons/si'
 
 
 function About() {
-  const technologyList = ["React", "HTML", "CSS", "NodeJS", "MongoDB", "Express", "API", "Git", "MySQL"]
-  const languageList = ["Java", "JavaScript", "Python", "C/C++"]
 
   return (
     <div className="aboutPage" id="about">
@@ -23,7 +20,8 @@ function About() {
             I'm employed as a Jr. Software Engineer and exposed to different technologies both in front end and back end. 
             I have lately gotten into the MERN stack (MongoDB, Express, ReactJS, NodeJS) as self improvement.
           </div>
-          <div className="skills">
+        </div>
+        <div className="skills">
             <div className="technologies">
               <h2>Technologies:</h2>
               <button>React <FaReact /></button>
@@ -43,7 +41,6 @@ function About() {
               <button>Python <FaPython /></button>
               <button>C/C++ </button>
             </div>
-          </div> 
         </div>
       </div>
     </div>

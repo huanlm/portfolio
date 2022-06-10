@@ -1,5 +1,5 @@
 import React from 'react'
-import './home.css'
+import './home.scss'
 
 function Home() {
   return (
@@ -9,7 +9,7 @@ function Home() {
           <h3 className="homeSmallText">Hi, I'm</h3>
           <h1 className="homeName">Huan Mai</h1>
           <h3>
-            <span className="homeSmallText">and I'm a</span>
+            <span className="homeSmallText extra">and I'm a</span>
             <span className="homeStatement"> Software Developer</span>
           </h3>
         </div>
