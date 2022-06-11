@@ -6,6 +6,7 @@ function Project({project}) {
     <>
       <div className="projCard">
         <h3 className="projTitle">
+          {project.icon != "" && <img className="projIcon" src={project.icon} alt="" />}
           {project.name}
         </h3>
         
@@ -17,7 +18,7 @@ function Project({project}) {
           }
         </div>
         <div className="projImg">
-          <img src={project.images[0]} alt="none" />
+          <img src={project.images[0]} alt="" />
         </div>
         <p className="projDesc">
           {project.desc}

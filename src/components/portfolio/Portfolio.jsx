@@ -1,4 +1,5 @@
 import React from 'react'
+import { icons } from 'react-icons/lib'
 import Project from '../project/Project'
 import './portfolio.scss'
 
@@ -6,10 +7,11 @@ function Portfolio() {
   const projects = [
     {
       name:"UCSD ASAP",
-      desc:"Full stack project made by group of 10 students.",
+      desc:"A 10-member team made program that helps students find different combinations of schedule based on the chosen classes. The program uses a mix of greedy and brute force algorithms to find the most optimized schedule based on GPA, Professor Ratings, Break gaps and Required courses.",
       links:"https://github.com/huanlm/ASAP",
-      images: ['../../images/homeCover.jpg'],
-      techs: ["Python", "JavaScript", "HTML", "MySQL"]
+      images:['https://i.imgur.com/Fqf2rFo.png', 'https://i.imgur.com/6tHRiDk.png', 'https://i.imgur.com/XcD4Dps.png', 'https://i.imgur.com/dSsoJQu.png'],
+      techs: ["Python", "JavaScript", "HTML", "MySQL"],
+      icon: "https://i.imgur.com/ZZQ6Ga1.png"
     },
     {
       name:"Front End Certification",
@@ -17,7 +19,8 @@ function Portfolio() {
       links:"https://www.freecodecamp.org/certification/fcc74f642bb-d7b6-4a9c-9529-45ef6889d867/front-end-development-libraries",
       images: ['../../images/homeCover.jpg'],
       certification: true,
-      techs: ["React", "Bootstrap", "Javascript", "CSS"]
+      techs: ["React", "Bootstrap", "Javascript", "CSS"],
+      icon: "http://assets.stickpng.com/images/5847f91ccef1014c0b5e48b8.png"
     },
     {
       name:"Back End and APIs Certification",
@@ -25,19 +28,21 @@ function Portfolio() {
       links:"https://www.freecodecamp.org/certification/fcc74f642bb-d7b6-4a9c-9529-45ef6889d867/back-end-development-and-apis",
       images: ['../../images/homeCover.jpg'],
       certification: true,
-      techs: ["NodeJS", "CRUD", "Express", "MongoDB"]
+      techs: ["NodeJS", "CRUD", "Express", "MongoDB"],
+      icon: "http://assets.stickpng.com/images/5847f91ccef1014c0b5e48b8.png"
     },
     {
       name:"Hotels Clone",
-      desc:"MERN stack project that simulate hotels.com site. I learnt many things from this project including itermediate and advance features of React.",
+      desc:"A full stack project that looks up and reservesv hotels in many different locations. The back end and API allow admin to modify the database hosted using mongoDB. The front end of application is written in React and is inspired by hotels and booking websites.",
       links:"https://github.com/huanlm/Hotels-Clone-App",
       images: ['../../images/homeCover.jpg'],
-      techs: ["MongoDB", "Express", "React", "NodeJS"]
+      techs: ["MongoDB", "Express", "React", "NodeJS"],
+      icon: "http://assets.stickpng.com/thumbs/60361248d5d099000442a802.png"
     },
   ]
   return (
     <div className="projPage" id="portfolio">
-      <h1 className="projSectTitle">Things I've done</h1>
+      <h1 className="projSectTitle">Projects</h1>
       <div className="projects">
         {projects.map((item, key) => (
           <Project project={item} key={key}/>

@@ -1,6 +1,6 @@
 .projCard {
   width: 500px;
-  height: 450px;
+  height: 550px;
   display: flex;
   justify-content: top;
   flex-direction: column;
@@ -18,8 +18,17 @@
   }
 }
 
+.projIcon {
+  height: 35px;
+  margin-right: 10px;
+}
+
 .projTitle {
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .projImg {
@@ -27,7 +36,7 @@
   height: 250px;
   align-items: center;
   margin-bottom: 30px;
-  &img {
+  > img {
     width: 100%;
     height: 100%;
   }

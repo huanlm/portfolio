@@ -15,10 +15,9 @@ function About() {
           <div className="hiText">Hi there,</div>
           <br/>
           <div className="bio">My name is Huan Mai. I'm a passionate software developer based in San Diego, CA. I love to create software and solve new problems.
-            <br/><br/>I'm currently working on myself to become a full stack developer. 
-            My goal is to be adept in both front end and back end concept so I can make contribution whenever possible. 
-            I'm employed as a Jr. Software Engineer and exposed to different technologies both in front end and back end. 
-            I have lately gotten into the MERN stack (MongoDB, Express, ReactJS, NodeJS) as self improvement.
+          I graduated from UCSD in 2020 major in Applied Mathematics and minor in Computer Science and now, I'm being employed as a Jr. Software Engineer where I get to experience many technologies in both front end and back end.
+          <br/><br/>
+          I'm currently working on myself to become a full stack developer. My goal is to be adept in both front end and back end concept so I can make contribution whenever possible. 
           </div>
         </div>
         <div className="skills">
