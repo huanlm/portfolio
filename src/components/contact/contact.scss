@@ -27,6 +27,7 @@
   max-width: 860px;
   border-radius: 20px;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   padding: 50px;
   flex: 1;
@@ -74,4 +75,9 @@ input[type='name'] {
 
 .image {
   flex:1;
+}
+
+.alert {
+  position: relative;
+  margin-left: auto;
 }
