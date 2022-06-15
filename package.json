@@ -16,6 +16,7 @@
     "react-tsparticles": "^2.0.6",
     "sass": "^1.52.3",
     "tsparticles": "^2.0.6",
+    "typewriter-effect": "^2.18.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

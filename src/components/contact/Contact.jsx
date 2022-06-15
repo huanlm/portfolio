@@ -26,7 +26,7 @@ function Contact() {
 
   return (
     <div className="contactPage" id="contact">
-      <h1 className="contactTitle">
+      <h1 className="contactTitle sectionTitle">
         Contact Me
       </h1>
       <div className="contactContainer">

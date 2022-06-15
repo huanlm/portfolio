@@ -3,11 +3,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.homeInfo{
+.homeInfo {
   text-align: left;
+  margin-top: -10px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .homeName {
@@ -21,22 +27,30 @@
 
 .homeStatement {
   font-size: 3.5rem;
-  margin: 0;
+  font-weight: bolder;
+  background: #b3005f;
+  background: -webkit-linear-gradient(to right, #b3005f, #00aaff);
+  background: linear-gradient(to right, #b3005f, #00aaff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
-@media only screen and (max-width: 600px) {
+.scrollDown {
+  bottom: 0;
+  left: 0;
+}
+
+@media only screen and (max-width: 600px), screen and (max-height: 480px){
   .homeInfo {
     text-align: center;
   }
+
   .homeName {
-    font-size: 5rem;
+    font-size: 4.5rem;
     margin: 0;
   }
-  
-  .homeSmallText.extra {
-    display:none;
-  }
-  
+
   .homeStatement {
     font-size: 2rem;
     margin: 0;

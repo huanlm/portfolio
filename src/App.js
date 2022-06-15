@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import Home from './components/home/Home';
 import About from './components/about/About';
 import Experience from './components/experience/Experience';
@@ -43,6 +43,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Home/>
+      <div className='separator'></div>
       <div className="section"><About/></div>
       <div className='separator'></div>
       <div className="section"><Experience/></div>

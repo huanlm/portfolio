@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './navbar.scss'
-import {BsMenuButtonWide} from 'react-icons/bs'
+import { BsMenuButtonWide } from 'react-icons/bs'
+import { IoCloseCircleOutline } from 'react-icons/io5'
 
 function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
@@ -29,26 +30,28 @@ function Navbar() {
             Contact
           </a>
         </div>
-        
-        <button onClick={handleMenuClick} className="menuButton"><BsMenuButtonWide /></button>
+
+        <button onClick={handleMenuClick} className={openMenu ? "menuButton open" : "menuButton"}>
+          {!openMenu ? <BsMenuButtonWide /> : <IoCloseCircleOutline />}
+        </button>
       </div>
-      <div className={openMenu?"hamMenu open" : "hamMenu"}>
-          {/* <a onClick={handleMenuClick} className="navButton" href="#home">
+      <div className={openMenu ? "hamMenu open" : "hamMenu"}>
+        {/* <a onClick={handleMenuClick} className="navButton" href="#home">
             Home
           </a> */}
-          <a onClick={handleMenuClick} className="navButton" href="#about">
-            About
-          </a>
-          <a onClick={handleMenuClick} className="navButton" href="#experience">
-            Experience
-          </a>
-          <a onClick={handleMenuClick} className="navButton" href="#portfolio">
-            Portfolio
-          </a>
-          <a onClick={handleMenuClick} className="navButton" href="#contact">
-            Contact
-          </a>
-        </div>
+        <a onClick={handleMenuClick} className="navButton" href="#about">
+          About
+        </a>
+        <a onClick={handleMenuClick} className="navButton" href="#experience">
+          Experience
+        </a>
+        <a onClick={handleMenuClick} className="navButton" href="#portfolio">
+          Portfolio
+        </a>
+        <a onClick={handleMenuClick} className="navButton" href="#contact">
+          Contact
+        </a>
+      </div>
     </>
   )
 }

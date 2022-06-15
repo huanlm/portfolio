@@ -13,12 +13,22 @@
 }
 
 .App {
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
   position: absolute;
   width: 100vw;
   z-index: 1;
+}
+
+.sectionTitle {
+  font-size: 5.0rem !important;
+  background: #00aab3;
+  background: -webkit-linear-gradient(to right, #b3005f, #00aaff);
+  background: linear-gradient(to right, #b3005f, #00aaff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .section {
@@ -27,9 +37,11 @@
 }
 
 .separator {
-  width: 300px;
+  width: 100%;
   height: 10px;
-  background-color: rgba(255, 255, 255, 0.428);
+  background: -webkit-linear-gradient(to right, #b3005f, #00aaff);
+  background: linear-gradient(to right, #b3005f, #00aaff);
+
 }
 
 .goTopButton {
@@ -40,7 +52,7 @@
   background-color: transparent;
   border: none;
   font-size: 3rem;
-  color: var(--text-color); 
+  color: var(--text-color);
   transition: 0.3s;
 }
 

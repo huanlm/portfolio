@@ -6,7 +6,7 @@ import snapMobile from '../../images/SnapMobile.png'
 function Experience() {
   return (
     <div className="exPage" id="experience">
-      <h1 className="exTitle">Experience</h1>
+      <h1 className="exTitle sectionTitle">Experience</h1>
       <div className="exItems">
         <div className="images">
           <img className="img1" src={snapWeb} alt="none" />

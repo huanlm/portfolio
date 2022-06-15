@@ -8,7 +8,7 @@ export let particles = {
       "position": "50% 50%",
       "repeat": "no-repeat",
       "size": "cover",
-      "opacity": 1
+      "opacity": 0.9
     },
     "backgroundMask": {
       "composite": "destination-out",
@@ -41,12 +41,12 @@ export let particles = {
           "type": "circle"
         },
         "onHover": {
-          "enable": false,
-          "mode": "repulse",
+          "enable": true,
+          "mode": "none",
           "parallax": {
-            "enable": false,
-            "force": 2,
-            "smooth": 10
+            "enable": true,
+            "force": 10,
+            "smooth": 20
           }
         },
         "resize": true

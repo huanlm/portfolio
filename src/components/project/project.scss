@@ -46,7 +46,7 @@
   width: 100%;
   height: 120px;
   overflow: auto;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .projLink {
@@ -90,5 +90,13 @@
     &:hover{
       transform: none;
     }
+  }
+
+  .projImg {
+    height: auto;
+  }
+
+  .projDesc{
+    margin-bottom: 20px;
   }
 }

@@ -9,7 +9,7 @@ function About() {
 
   return (
     <div className="aboutPage" id="about">
-      <h1 className="abTitle">About Me</h1>
+      <h1 className="abTitle sectionTitle">About Me</h1>
       <div className="about">
         <div className="aboutInfo">
           <div className="hiText">Hi there,</div>

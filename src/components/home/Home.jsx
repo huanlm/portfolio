@@ -1,5 +1,7 @@
 import React from 'react'
+import ScrollDown from '../scrollDown/ScrollDown'
 import './home.scss'
+import Typewriter from 'typewriter-effect'
 
 function Home() {
   return (
@@ -8,10 +10,16 @@ function Home() {
         <div className="homeInfo">
           <h3 className="homeSmallText">Hi, I'm</h3>
           <h1 className="homeName">Huan Mai</h1>
-          <h3>
-            <span className="homeSmallText extra">and I'm a</span>
-            <span className="homeStatement"> Software Developer</span>
-          </h3>
+          <span className="homeSmallText extra">and I'm a</span>
+          <Typewriter
+            options={{
+              strings: ['<span class="homeStatement">Software Developer</span>'],
+              autoStart: true,
+              loop: true,
+              cursorClassName: "homeStatement"
+            }}
+          />
+          <ScrollDown className="scrollDown" />
         </div>
       </div>
     </>
