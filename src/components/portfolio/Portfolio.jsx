@@ -1,5 +1,4 @@
 import React from 'react'
-import { icons } from 'react-icons/lib'
 import Project from '../project/Project'
 import './portfolio.scss'
 
@@ -15,29 +14,29 @@ function Portfolio() {
     },
     {
       name: "Front End Certification",
-      desc: "An extensive course from FreeCodeCamp regarding front end development. The main technologies in this course are HTML, CSS, React, JavaScript. The course required me to complete many projects which are included in the certification link below",
+      desc: "An extensive course from FreeCodeCamp regarding front end development. The main framework in this course is React. Not only that this course taught me about newer techs like React, it also helps me understand fundamental of front end development which affect greatly on how I perform at my job. ",
       links: "https://www.freecodecamp.org/certification/fcc74f642bb-d7b6-4a9c-9529-45ef6889d867/front-end-development-libraries",
-      images: ['../../images/homeCover.jpg'],
+      images: ['https://i.imgur.com/dC8Ps89.png'],
       certification: true,
       techs: ["React", "Bootstrap", "Javascript", "CSS"],
-      icon: "http://assets.stickpng.com/images/5847f91ccef1014c0b5e48b8.png"
+      icon: "https://i.imgur.com/lud5QKy.png"
     },
     {
       name: "Back End and APIs Certification",
-      desc: "An extensive course in Back End and APIs development, I learnt how to write back end apps with Node.js and npm. I also built web applications with the Express framework, and build a People Finder microservice with MongoDB and the Mongoose library.",
+      desc: "An extensive course in Back End and APIs development, I learnt how to write back end apps/API using Node.js and NPM. This course also taught me the fundamentals of back end development which I find very useful when resolving tasks in day to day job.",
       links: "https://www.freecodecamp.org/certification/fcc74f642bb-d7b6-4a9c-9529-45ef6889d867/back-end-development-and-apis",
-      images: ['../../images/homeCover.jpg'],
+      images: ['https://i.imgur.com/HdM05Zy.png'],
       certification: true,
       techs: ["NodeJS", "CRUD", "Express", "MongoDB"],
-      icon: "http://assets.stickpng.com/images/5847f91ccef1014c0b5e48b8.png"
+      icon: "https://i.imgur.com/lud5QKy.png"
     },
     {
       name: "Hotels Clone",
-      desc: "A full stack project that looks up and reservesv hotels in many different locations. The back end and API allow admin to modify database using CRUD operation. The front end of application is written in React and is inspired by hotels and booking websites.",
+      desc: "A full stack project that looks up and reservesv hotels in many different locations. The back end API allow admin to modify database using CRUD operation. The front end of application is written in React and is inspired by hotels and booking websites.",
       links: "https://github.com/huanlm/Hotels-Clone-App",
-      images: ['../../images/homeCover.jpg'],
+      images: ['https://i.imgur.com/zSArG1F.png','https://i.imgur.com/jhPufwV.jpg', 'https://i.imgur.com/W9n8Pxm.jpg','https://i.imgur.com/deO2UFp.jpg', 'https://i.imgur.com/ckVbH4T.png','https://i.imgur.com/Z5gIvjc.jpg'],
       techs: ["MongoDB", "Express", "React", "NodeJS"],
-      icon: "http://assets.stickpng.com/thumbs/60361248d5d099000442a802.png"
+      icon: "https://i.imgur.com/ClXcmKe.png"
     },
   ]
   return (

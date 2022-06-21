@@ -14,10 +14,10 @@ function About() {
         <div className="aboutInfo">
           <div className="hiText">Hi there,</div>
           <br/>
-          <div className="bio">My name is Huan Mai. I'm a passionate software developer based in San Diego, CA. I love to create software and solve new problems.
-          I graduated from UCSD in 2020 major in Applied Mathematics and minor in Computer Science and now, I'm being employed as a Jr. Software Engineer where I get to experience many technologies in both front end and back end.
+          <div className="bio">My name is Huan Mai. I'm a passionate software developer based in San Diego, CA who loves to create software and solve new problems.
+          I graduated from UCSD in 2020 major in Applied Mathematics and minor in Computer Science.
           <br/><br/>
-          I'm currently working on myself to become a full stack developer. My goal is to be adept in both front end and back end concept so I can make contribution whenever possible. 
+          I'm currently working on myself to become a full stack developer. My goal is to be adept in both front end and back end development so I can make contribution whenever possible. 
           </div>
         </div>
         <div className="skills">

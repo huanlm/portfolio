@@ -10,6 +10,13 @@ $nav-color: rgb(22, 23, 25);
   background-color: $nav-color;
 }
 
+.logo {
+  position: absolute;
+  left: 20px;
+  width: 50px;
+  height: auto;
+}
+
 .navButton {
   font-size: 1.7rem;
   font-weight: bolder;

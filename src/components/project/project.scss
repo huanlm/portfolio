@@ -6,13 +6,13 @@
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
-  background-color: var(--forground-color);
-  box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.35);
+  background-color: rgb(45, 45, 45);
+  box-shadow: 0px 0px 5px 2px rgba(240, 240, 240, 0.342);
   box-sizing: border-box;
   padding: 20px;
   margin: 10px;
   transition: 0.3s;
-  
+
   &:hover {
     transform: scale(1.05);
   }
@@ -34,10 +34,15 @@
 .projImg {
   width: 100%;
   height: 250px;
+  display: flex;
+  justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  > img {
-    width: 100%;
+
+  >img {
+    width: auto;
+    max-width: 100%;
+    border-radius: 5px;
     height: 100%;
   }
 }
@@ -58,7 +63,7 @@
   padding: 5px;
   box-sizing: border-box;
 
-  > a {
+  >a {
     color: var(--text-color);
     font-weight: bold;
     text-decoration: none;
@@ -72,7 +77,8 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  & > span {
+
+  &>span {
     font-weight: bold;
     border-color: var(--text-color);
     background-color: var(--background-color);
@@ -83,11 +89,63 @@
   }
 }
 
+.slider {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.887);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  visibility: visible;
+  opacity: 1;
+
+  &.closed {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.sliderWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.sliderImg {
+  width: auto;
+  max-width: 95%;
+  max-height: 80vh;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 50px;
+  color: lightgray;
+  cursor: pointer;
+}
+
+.arrow {
+  margin: 20px;
+  font-size: 50px;
+  color: lightgray;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 560px) {
   .projCard {
     width: 330px;
     height: 500px;
-    &:hover{
+
+    &:hover {
       transform: none;
     }
   }
@@ -96,7 +154,23 @@
     height: auto;
   }
 
-  .projDesc{
+  .projDesc {
     margin-bottom: 20px;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: lightgray;
+    cursor: pointer;
+  }
+
+  .arrow {
+    margin: 2px;
+    font-size: 30px;
+    color: lightgray;
+    cursor: pointer;
   }
 }

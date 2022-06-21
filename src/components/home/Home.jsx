@@ -4,12 +4,14 @@ import './home.scss'
 import Typewriter from 'typewriter-effect'
 
 function Home() {
+  const openBracket = '{'
+  const closeBracket = '}'
   return (
     <>
       <div className="homeContainer" id="home">
         <div className="homeInfo">
           <h3 className="homeSmallText">Hi, I'm</h3>
-          <h1 className="homeName">Huan Mai</h1>
+          <h1 className="homeName"><span className='symbol'>{openBracket}</span>Huan<span className='symbol'>:</span>Mai<span className='symbol'>{closeBracket}</span></h1>
           <span className="homeSmallText extra">and I'm a</span>
           <Typewriter
             options={{

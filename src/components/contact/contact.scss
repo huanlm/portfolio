@@ -35,7 +35,9 @@
 }
 
 .contactForm {
-  > input, textarea {
+
+  >input,
+  textarea {
     padding: 20px;
     margin-bottom: 20px;
     width: 100%;
@@ -44,19 +46,27 @@
     box-sizing: border-box;
   }
 
-  > textarea {
+  >textarea {
     height: 30vh;
     resize: none;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
-  
-  > button {
+
+  >button {
     position: relative;
     left: auto;
     width: 100px;
     height: 40px;
     border-radius: 5px;
     transition: 0.3s;
+    color: var(--text-color);
+    border-color: var(--text-color);
+    background-color: var(--background-color);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 1.2rem;
+
     &:hover {
       background-color: rgb(94, 168, 94);
     }
@@ -74,7 +84,7 @@ input[type='name'] {
 }
 
 .image {
-  flex:1;
+  flex: 1;
 }
 
 .alert {

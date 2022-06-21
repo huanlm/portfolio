@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './navbar.scss'
 import { BsMenuButtonWide } from 'react-icons/bs'
 import { IoCloseCircleOutline } from 'react-icons/io5'
+import logo from '../../images/logo.png'
 
 function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
@@ -13,6 +14,7 @@ function Navbar() {
   return (
     <>
       <div className="navContainer">
+        <img className="logo" src={logo} alt="" />
         <div className="navItems">
           {/* <a className="navButton" href="#home">
             Home
