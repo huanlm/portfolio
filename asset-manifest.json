@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.c3b573b5.css",
+    "main.js": "/portfolio/static/js/main.0a074236.js",
+    "static/js/937.cc77dee8.chunk.js": "/portfolio/static/js/937.cc77dee8.chunk.js",
+    "static/media/SnapWeb.png": "/portfolio/static/media/SnapWeb.81bd1e3c6599ef66136e.png",
+    "static/media/SnapMobile.png": "/portfolio/static/media/SnapMobile.3bf0d8905444e8bfea78.png",
+    "static/media/logo.png": "/portfolio/static/media/logo.c5fdbd88feec98d72e83.png",
+    "index.html": "/portfolio/index.html",
+    "main.c3b573b5.css.map": "/portfolio/static/css/main.c3b573b5.css.map",
+    "main.0a074236.js.map": "/portfolio/static/js/main.0a074236.js.map",
+    "937.cc77dee8.chunk.js.map": "/portfolio/static/js/937.cc77dee8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3b573b5.css",
+    "static/js/main.0a074236.js"
+  ]
+}
