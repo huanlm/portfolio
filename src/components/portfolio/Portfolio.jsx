@@ -32,7 +32,7 @@ function Portfolio() {
     },
     {
       name: "Hotels Clone",
-      desc: "A full stack project that looks up and reservesv hotels in many different locations. The back end API allow admin to modify database using CRUD operation. The front end of application is written in React and is inspired by hotels and booking websites.",
+      desc: "A full stack project that looks up and reserves hotels in many different locations. The back end API allows admin to modify database using CRUD operation. The front end of application is written in React and is inspired by hotels and booking websites.",
       links: "https://github.com/huanlm/Hotels-Clone-App",
       images: ['https://i.imgur.com/zSArG1F.png','https://i.imgur.com/jhPufwV.jpg', 'https://i.imgur.com/W9n8Pxm.jpg','https://i.imgur.com/deO2UFp.jpg', 'https://i.imgur.com/ckVbH4T.png','https://i.imgur.com/Z5gIvjc.jpg'],
       techs: ["MongoDB", "Express", "React", "NodeJS"],

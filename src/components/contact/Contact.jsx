@@ -4,7 +4,7 @@ import emailjs from 'emailjs-com'
 import { useRef } from 'react';
 import { MapContainer, TileLayer, CircleMarker, Popup } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
-
+import {AiFillCheckCircle} from 'react-icons/ai'
 
 function Contact() {
   const [name, setName] = useState("");
@@ -70,8 +70,8 @@ function Contact() {
             name="user_message"
             required
           />
-          <button type="submit">Send</button>
-          {done && <h3 className="alert">Message has been sent! Thank you {name}, I'll get back to you ASAP!</h3>}
+          <button disabled={done} type="submit">{!done ? "Send" : <AiFillCheckCircle/>}</button>
+          {done && <h3 className="alert">Message sent! Thank you {name}, I'll get back to you ASAP!</h3>}
           {error && <h3 className="alert">Something went wrong, please try again later.</h3>}
         </form>
 

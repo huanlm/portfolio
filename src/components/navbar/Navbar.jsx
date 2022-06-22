@@ -3,6 +3,7 @@ import './navbar.scss'
 import { BsMenuButtonWide } from 'react-icons/bs'
 import { IoCloseCircleOutline } from 'react-icons/io5'
 import logo from '../../images/logo.png'
+import Resume from '../../assets/Resume.pdf'
 
 function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
@@ -31,6 +32,9 @@ function Navbar() {
           <a className="navButton" href="#contact">
             Contact
           </a>
+          <a className="navButton" href={Resume} download="Huan's Resume.pdf">
+            Resume
+          </a>
         </div>
 
         <button onClick={handleMenuClick} className={openMenu ? "menuButton open" : "menuButton"}>
@@ -52,6 +56,9 @@ function Navbar() {
         </a>
         <a onClick={handleMenuClick} className="navButton" href="#contact">
           Contact
+        </a>
+        <a className="navButton" href={Resume} download="Huan's Resume.pdf">
+          Resume
         </a>
       </div>
     </>

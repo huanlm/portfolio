@@ -68,12 +68,16 @@
     background-color: var(--background-color);
     border-radius: 5px;
     margin: 5px;
-    padding: 5px;
+    padding: 8px;
     font-size: 1.2rem;
 
     &:hover {
       background-color: rgb(94, 168, 94);
     }
+  }
+
+  >h3 {
+    margin-top: 10px;
   }
 }
 
