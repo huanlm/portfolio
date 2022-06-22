@@ -1,4 +1,4 @@
-$nav-color: rgb(22, 23, 25);
+$nav-color: rgb(18, 25, 38);
 
 .navContainer {
   height: 70px;
@@ -8,6 +8,7 @@ $nav-color: rgb(22, 23, 25);
   align-items: center;
   box-sizing: border-box;
   background-color: $nav-color;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -35,6 +36,7 @@ $nav-color: rgb(22, 23, 25);
 
 .hamMenu {
   display: none;
+  box-sizing: border-box;
 }
 
 .menuButton {

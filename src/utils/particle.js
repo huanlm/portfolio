@@ -2,13 +2,13 @@ export let particles = {
     "autoPlay": true,
     "background": {
       "color": {
-        "value": "#00000000"
+        "value": "#02101F"
       },
       "image": "",
       "position": "50% 50%",
       "repeat": "no-repeat",
       "size": "cover",
-      "opacity": 0.9
+      "opacity": 1
     },
     "backgroundMask": {
       "composite": "destination-out",
