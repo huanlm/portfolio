@@ -12,7 +12,7 @@ function Experience() {
           <img className="img1" src={snapWeb} alt="none" />
           <img className="img2" src={snapMobile} alt="none" />
         </div>
-        <div className="exItem">
+        <div className="jobDesc">
           <h1> Jr. Software Engineer </h1>
           <h3> Snapiot/Labcorp (2020 - Current)</h3>
           <ul>

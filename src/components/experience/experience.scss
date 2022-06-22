@@ -21,7 +21,7 @@
   align-items: center;
 }
 
-.exItem {
+.jobDesc {
   flex: 1;
   width: 100%;
   box-sizing: border-box;
@@ -75,8 +75,9 @@
   .exItems {
     flex-direction: column;
   }
-  .exItem {
+  .jobDesc {
     align-items: center;
+    margin-bottom: 0;
   }
 }
 

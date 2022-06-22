@@ -15,10 +15,12 @@ function Home() {
           <span className="homeSmallText extra">and I'm a</span>
           <Typewriter
             options={{
-              strings: ['<span class="homeStatement">Software Developer</span>'],
+              strings: ['<span class="homeStatement">Software Developer</span>', '<span class="homeStatement">Full Stack Developer</span>', '<span class="homeStatement">Application Developer</span>'],
               autoStart: true,
               loop: true,
-              cursorClassName: "homeStatement"
+              cursorClassName: "homeStatement",
+              deleteSpeed: 19,
+              delay: 90
             }}
           />
           <ScrollDown className="scrollDown" />
