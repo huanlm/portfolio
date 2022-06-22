@@ -22,7 +22,7 @@ function Portfolio() {
       icon: "https://i.imgur.com/lud5QKy.png"
     },
     {
-      name: "Back End and APIs Certification",
+      name: "Back End / APIs Certification",
       desc: "An extensive course in Back End and APIs development, I learnt how to write back end apps/API using Node.js and NPM. This course also taught me the fundamentals of back end development which I find very useful when resolving tasks in day to day job.",
       links: "https://www.freecodecamp.org/certification/fcc74f642bb-d7b6-4a9c-9529-45ef6889d867/back-end-development-and-apis",
       images: ['https://i.imgur.com/HdM05Zy.png'],

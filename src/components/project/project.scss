@@ -50,7 +50,8 @@
 
 .projDesc {
   width: 100%;
-  height: 120px;
+  height: fit-content;
+  max-height: 150px;
   overflow: auto;
   font-size: 0.9rem;
 }
@@ -82,7 +83,6 @@
   &>span {
     font-weight: bold;
     border-color: var(--text-color);
-    background-color: var(--background-color);
     border-radius: 5px;
     padding-left: 0;
     margin: 0px 20px 0px 0px;
@@ -152,7 +152,8 @@
   }
 
   .projImg {
-    height: auto;
+    width: auto;
+    max-height: 150px;
   }
 
   .projDesc {

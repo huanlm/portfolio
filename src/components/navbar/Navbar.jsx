@@ -41,25 +41,27 @@ function Navbar() {
           {!openMenu ? <BsMenuButtonWide /> : <IoCloseCircleOutline />}
         </button>
       </div>
-      <div className={openMenu ? "hamMenu open" : "hamMenu"}>
-        {/* <a onClick={handleMenuClick} className="navButton" href="#home">
+      <div onTouchStart={handleMenuClick} className={openMenu ? "hamMenuWrapper open" : "hamMenuWrapper"}>
+        <div className="hamMenu">
+          {/* <a onClick={handleMenuClick} className="navButton" href="#home">
             Home
           </a> */}
-        <a onClick={handleMenuClick} className="navButton" href="#about">
-          About
-        </a>
-        <a onClick={handleMenuClick} className="navButton" href="#experience">
-          Experience
-        </a>
-        <a onClick={handleMenuClick} className="navButton" href="#portfolio">
-          Portfolio
-        </a>
-        <a onClick={handleMenuClick} className="navButton" href="#contact">
-          Contact
-        </a>
-        <a className="navButton" href={Resume} download="Huan's Resume.pdf">
-          Resume
-        </a>
+          <a onClick={handleMenuClick} className="navButton" href="#about">
+            About
+          </a>
+          <a onClick={handleMenuClick} className="navButton" href="#experience">
+            Experience
+          </a>
+          <a onClick={handleMenuClick} className="navButton" href="#portfolio">
+            Portfolio
+          </a>
+          <a onClick={handleMenuClick} className="navButton" href="#contact">
+            Contact
+          </a>
+          <a className="navButton" href={Resume} download="Huan's Resume.pdf">
+            Resume
+          </a>
+        </div>
       </div>
     </>
   )
