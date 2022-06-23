@@ -42,7 +42,8 @@ function Navbar() {
         </button>
       </div>
       <div onTouchStart={handleMenuClick} className={openMenu ? "hamMenuWrapper open" : "hamMenuWrapper"}>
-        <div className="hamMenu">
+      </div>
+      <div className={openMenu ? "hamMenu open" : "hamMenu"}>
           {/* <a onClick={handleMenuClick} className="navButton" href="#home">
             Home
           </a> */}
@@ -62,7 +63,6 @@ function Navbar() {
             Resume
           </a>
         </div>
-      </div>
     </>
   )
 }
