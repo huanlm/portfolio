@@ -4,8 +4,10 @@ import { BsMenuButtonWide } from 'react-icons/bs'
 import { IoCloseCircleOutline } from 'react-icons/io5'
 import logo from '../../images/logo.png'
 import Resume from '../../assets/Resume.pdf'
+import {useScroll} from '../../hooks/useScroll'
 
 function Navbar() {
+  const { y, x, scrollDirection } = useScroll();  
   const [openMenu, setOpenMenu] = useState(false);
 
   const handleMenuClick = () => {
@@ -14,7 +16,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="navContainer">
+      <div className={scrollDirection === "up" ? "navContainer hidden": "navContainer"}>
         <img className="logo" src={logo} alt="" />
         <div className="navItems">
           {/* <a className="navButton" href="#home">
