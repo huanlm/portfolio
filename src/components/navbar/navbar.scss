@@ -13,7 +13,7 @@ $nav-color: rgb(18, 25, 38);
   box-sizing: border-box;
   z-index: 999;
   visibility: visible;
-  transition: all 0.3s;
+  transition: all 0.5s;
 
   &.hidden {
     visibility: hidden;
