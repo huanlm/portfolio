@@ -52,7 +52,7 @@ function Project({ project }) {
         />
       </div>
 
-      <div className="projCard">
+      <div className={!project.inProgress ? "projCard" : "projCard inprogress"}>
         <h3 className="projTitle">
           {project.icon != "" && <img className="projIcon" src={project.icon} alt="" />}
           {project.name}
@@ -75,7 +75,7 @@ function Project({ project }) {
         <p className="projDesc">
           {project.desc}
         </p>
-        <button className="projLink">
+        <button className={!project.inProgress ? "projLink":"projLink inprogress"}>
           {<a href={project.links} rel="noreferrer" target="_blank">{!project.certification ? "Github" : "Certificate"}</a>}
         </button>
       </div>

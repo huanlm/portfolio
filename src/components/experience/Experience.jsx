@@ -17,7 +17,8 @@ function Experience() {
           <h3> Snapiot/Labcorp (2020 - Current)</h3>
           <ul>
             <li>Develop software for clinical trials using SnapClinical infrastructure</li>
-            <li>Create and deploy Web and Mobile apps with precicion and efficiency in only 12 weeks</li>
+            <li>Maintain SnapClinical’s frontend and backend using Angular | JavaScript | Java Spring | MySQL</li>
+            <li>Design custom reusable Groovy scripts that meet project specifications</li>
             <li>Create reusable components that will be used as default baseline for newer projects</li>
           </ul>
         </div>

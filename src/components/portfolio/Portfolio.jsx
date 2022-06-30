@@ -13,21 +13,12 @@ function Portfolio() {
       icon: "https://i.imgur.com/ZZQ6Ga1.png"
     },
     {
-      name: "Front End Certification",
-      desc: "An extensive course from FreeCodeCamp regarding front end development. The main framework in this course is React. Not only that this course taught me about newer techs like React, it also helps me understand fundamental of front end development which affect greatly on how I perform at my job. ",
+      name: "Front-End and Back-End/API Certification",
+      desc: "Extensive courses from FreeCodeCamp regarding front-end and back-end developments. Along with multiple mini projects that this course requires to complete, it helps me understand fundamentals of full stack web development which affect greatly on how I perform at my job. ",
       links: "https://www.freecodecamp.org/certification/fcc74f642bb-d7b6-4a9c-9529-45ef6889d867/front-end-development-libraries",
-      images: ['https://i.imgur.com/dC8Ps89.png'],
+      images: ['https://i.imgur.com/dC8Ps89.png', 'https://i.imgur.com/HdM05Zy.png'],
       certification: true,
-      techs: ["React", "Bootstrap", "Javascript", "CSS"],
-      icon: "https://i.imgur.com/lud5QKy.png"
-    },
-    {
-      name: "Back End / APIs Certification",
-      desc: "An extensive course in Back End and APIs development, I learnt how to write back end apps/API using Node.js and NPM. This course also taught me the fundamentals of back end development which I find very useful when resolving tasks in day to day job.",
-      links: "https://www.freecodecamp.org/certification/fcc74f642bb-d7b6-4a9c-9529-45ef6889d867/back-end-development-and-apis",
-      images: ['https://i.imgur.com/HdM05Zy.png'],
-      certification: true,
-      techs: ["NodeJS", "CRUD", "Express", "MongoDB"],
+      techs: ["React", "JavaScript", "CSS", "Node", "API", "Express", "MongoDB"],
       icon: "https://i.imgur.com/lud5QKy.png"
     },
     {
@@ -37,6 +28,15 @@ function Portfolio() {
       images: ['https://i.imgur.com/zSArG1F.png','https://i.imgur.com/jhPufwV.jpg', 'https://i.imgur.com/W9n8Pxm.jpg','https://i.imgur.com/deO2UFp.jpg', 'https://i.imgur.com/ckVbH4T.png','https://i.imgur.com/Z5gIvjc.jpg'],
       techs: ["MongoDB", "Express", "React", "NodeJS"],
       icon: "https://i.imgur.com/ClXcmKe.png"
+    },
+    {
+      name: "Bug Tracking App",
+      desc: "I'm currently working on this project because I decided to learn back-end and API developement using C# and ASP.NET to expand my horizon on different technologies.",
+      links: "",
+      images: ["https://monophy.com/media/O7xsvQoMfiNVtKyAnJ/monophy.gif"],
+      techs: ["C#", "ASP.NET", "React", "MicrosoftSQL"],
+      icon: "",
+      inProgress: true,
     },
   ]
   return (
