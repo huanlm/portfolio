@@ -2,8 +2,7 @@ import React from 'react'
 import './about.scss'
 import {FaReact , FaHtml5, FaCss3Alt, FaNodeJs, FaNpm, FaGithub, FaJava, FaPython} from 'react-icons/fa'
 import {DiMongodb, DiMysql, DiJavascript} from 'react-icons/di'
-import {SiFastapi} from 'react-icons/si'
-
+import {SiFastapi, SiCsharp, SiCplusplus} from 'react-icons/si'
 
 function About() {
 
@@ -32,13 +31,15 @@ function About() {
               <button>API <SiFastapi /></button>
               <button>Git <FaGithub /></button>
               <button>MySQL <DiMysql /></button>
+              <button>ASP.NET </button>
             </div>
             <div className="languages">
               <h2>Languages:</h2>
               <button>Java <FaJava /></button>
               <button>JavaScript <DiJavascript /></button>
               <button>Python <FaPython /></button>
-              <button>C/C++ </button>
+              <button>C/C++ <SiCplusplus /></button>
+              <button>C# <SiCsharp /></button>
             </div>
         </div>
       </div>

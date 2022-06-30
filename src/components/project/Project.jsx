@@ -31,7 +31,7 @@ function Project({ project }) {
 
   return (
     <>
-      <div className={(open) ? "slider": "slider closed"}>
+      <div className={(open) ? "slider" : "slider closed"}>
         <FontAwesomeIcon
           icon={faCircleXmark}
           className="close"
@@ -75,9 +75,13 @@ function Project({ project }) {
         <p className="projDesc">
           {project.desc}
         </p>
-        <button className={!project.inProgress ? "projLink":"projLink inprogress"}>
-          {<a href={project.links} rel="noreferrer" target="_blank">{!project.certification ? "Github" : "Certificate"}</a>}
-        </button>
+        <div className="projLinksWrapper">
+          {project.links.map((item) => (
+            <button className={!project.inProgress ? "projLink" : "projLink inprogress"}>
+              {<a href={item.link} rel="noreferrer" target="_blank">{item.name}</a>}
+            </button>
+          ))}
+        </div>
       </div>
     </>
   )
