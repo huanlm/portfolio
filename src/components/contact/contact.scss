@@ -6,6 +6,28 @@
   flex-direction: column;
   margin-bottom: 0px;
   box-sizing: border-box;
+  >p{
+    align-self: auto;
+    margin-bottom: 30px;
+    >a {
+      font-size: 2rem;
+      border: 0px solid white;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    >a:link {
+      text-decoration: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    >a:visited {
+      text-decoration: none;
+      color: white;
+      cursor: pointer;
+    }
+  }
 }
 
 .contactTitle {
@@ -13,7 +35,7 @@
   justify-content: center;
   align-items: center;
   font-size: 3.5rem;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 .contactContainer {
@@ -105,8 +127,10 @@ input[type='name'] {
 .map-wrap {
   display: flex;
   width: 90%;
+  height: 40%;
   min-width: 300px;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   flex: 1;
   box-sizing: border-box;

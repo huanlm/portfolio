@@ -32,9 +32,23 @@
   justify-content: center;
   & h3 {
     margin-bottom: 50px;
+    > a {
+      font-size: large;
+      text-decoration: none;
+      color: white;
+      :link{
+        text-decoration: none;
+        color: white;
+      }
+      :visited {
+        text-decoration: none;
+        color: white;
+      }
+    }
   }
 
   & li {
+    font-size: 1.1rem;
     margin-bottom: 10px;
   }
 

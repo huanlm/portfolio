@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import './contact.scss'
 import emailjs from 'emailjs-com'
 import { useRef } from 'react';
-import { MapContainer, TileLayer, CircleMarker, Popup } from 'react-leaflet'
+import { MapContainer, TileLayer, CircleMarker, Popup, Marker, Circle } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
-import {AiFillCheckCircle} from 'react-icons/ai'
+import {AiFillCheckCircle, AiOutlineLinkedin, AiOutlineMail} from 'react-icons/ai'
 
 function Contact() {
   const [name, setName] = useState("");
@@ -32,6 +32,10 @@ function Contact() {
       <h1 className="contactTitle sectionTitle">
         Contact Me
       </h1>
+      <p>
+        <a href="mailto:huan.mai08@gmail.com"><AiOutlineMail/></a>
+        <a href="https://www.linkedin.com/in/huan-mai-1449ab187/"><AiOutlineLinkedin/></a>
+      </p>
       <div className="contactContainer">
         <form ref={formRef} onSubmit={handleSubmit} className="contactForm">
           <input
@@ -81,9 +85,9 @@ function Contact() {
               attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
-            <CircleMarker center={[32.76, -117.09]} radius={70}>
+            <Circle center={[32.76, -117.09]} radius={2700}>
               <Popup>Huan's location is here.</Popup>
-            </CircleMarker>
+            </Circle>
 
           </MapContainer>
         </div>

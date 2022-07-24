@@ -2,6 +2,7 @@ import React from 'react'
 import './experience.scss'
 import snapWeb from '../../images/SnapWeb.png'
 import snapMobile from '../../images/SnapMobile.png'
+import {TbExternalLink} from "react-icons/tb"
 
 function Experience() {
   return (
@@ -14,12 +15,12 @@ function Experience() {
         </div>
         <div className="jobDesc">
           <h1> Jr. Software Engineer </h1>
-          <h3> Snapiot/Labcorp (2020 - Current)</h3>
+          <h3> Snapiot/Labcorp Drug Development (2020 - Current) <a href="https://drugdevelopment.labcorp.com" target="_blank"><TbExternalLink/></a></h3>
           <ul>
-            <li>Develop software for clinical trials using SnapClinical infrastructure</li>
-            <li>Maintain SnapClinical’s frontend and backend using Angular | JavaScript | Java Spring | MySQL</li>
-            <li>Design custom reusable Groovy scripts that meet project specifications</li>
-            <li>Create reusable components that will be used as default baseline for newer projects</li>
+            <li>Develop applications for clinical trials using SnapClinical infrastructure</li>
+            <li>Maintain software frontend and backend using Angular | JavaScript | Java Spring | MySQL</li>
+            <li>Create standard libraries and main applications to improve efficiency for future projects</li>
+            <li>Quick turnaround on feature enhancement requests from client</li>
           </ul>
         </div>
       </div>
