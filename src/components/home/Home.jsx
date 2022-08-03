@@ -15,7 +15,7 @@ function Home() {
           <span className="homeSmallText extra">and I'm a</span>
           <Typewriter
             options={{
-              strings: ['<span class="homeStatement">Software Developer</span>', '<span class="homeStatement">Full Stack Developer</span>', '<span class="homeStatement">Application Developer</span>'],
+              strings: ['<span class="homeStatement">Software Developer</span>', '<span class="homeStatement">Mobile App Developer</span>'],
               autoStart: true,
               loop: true,
               cursorClassName: "homeStatement",

@@ -3,12 +3,12 @@ import './navbar.scss'
 import { BsMenuButtonWide } from 'react-icons/bs'
 import { IoCloseCircleOutline } from 'react-icons/io5'
 import logo from '../../images/logo.png'
-import Resume from '../../assets/Resume.pdf'
 import {useScroll} from '../../hooks/useScroll'
 
 function Navbar() {
   const { y, x, scrollDirection } = useScroll();  
   const [openMenu, setOpenMenu] = useState(false);
+  const resumeLink = "https://drive.google.com/file/d/1tEXY-FKHAzsYlg2rN3PA_qI-Ld42SQb4/view?usp=sharing";
 
   const handleMenuClick = () => {
     setOpenMenu(!openMenu)
@@ -29,12 +29,12 @@ function Navbar() {
             Experience
           </a>
           <a className="navButton" href="#portfolio">
-            Portfolio
+            Projects
           </a>
           <a className="navButton" href="#contact">
             Contact
           </a>
-          <a className="navButton" href={Resume} download="Huan's Resume.pdf">
+          <a className="navButton" href={resumeLink} target="_blank">
             Resume
           </a>
         </div>
@@ -56,12 +56,12 @@ function Navbar() {
             Experience
           </a>
           <a onClick={handleMenuClick} className="navButton" href="#portfolio">
-            Portfolio
+            Projects
           </a>
           <a onClick={handleMenuClick} className="navButton" href="#contact">
             Contact
           </a>
-          <a className="navButton" href={Resume} download="Huan's Resume.pdf">
+          <a className="navButton" href={resumeLink} target="_blank">
             Resume
           </a>
         </div>

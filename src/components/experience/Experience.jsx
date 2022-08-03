@@ -20,7 +20,7 @@ function Experience() {
             <li>Develop applications for clinical trials using SnapClinical infrastructure</li>
             <li>Maintain software frontend and backend using Angular | JavaScript | Java Spring | MySQL</li>
             <li>Create standard libraries and main applications to improve efficiency for future projects</li>
-            <li>Quick turnaround on feature enhancement requests from client</li>
+            <li>Reponsible for quick turnaround on feature enhancement requests from client</li>
           </ul>
         </div>
       </div>
