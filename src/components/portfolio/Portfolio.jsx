@@ -48,20 +48,6 @@ function Portfolio() {
       techs: ["MongoDB", "Express", "React", "NodeJS"],
       icon: "https://i.imgur.com/ClXcmKe.png"
     },
-    {
-      name: "Bug Tracking App",
-      desc: "I'm currently working on this project because I decided to learn back-end and API developement using C# and ASP.NET to expand my horizon on different technologies.",
-      links: [
-        {
-          name:"Github",
-          link:""
-        }
-      ],
-      images: ["https://monophy.com/media/O7xsvQoMfiNVtKyAnJ/monophy.gif"],
-      techs: ["C#", "ASP.NET", "React", "MicrosoftSQL"],
-      icon: "",
-      inProgress: true,
-    },
   ]
   return (
     <div className="projPage" id="portfolio">

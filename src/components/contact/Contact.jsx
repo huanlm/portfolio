@@ -33,8 +33,8 @@ function Contact() {
         Contact Me
       </h1>
       <p>
-        <a href="mailto:huan.mai08@gmail.com"><AiOutlineMail/></a>
-        <a href="https://www.linkedin.com/in/huan-mai-1449ab187/"><AiOutlineLinkedin/></a>
+        <a href="mailto:huan.mai08@gmail.com" target="_blank"><AiOutlineMail/></a>
+        <a href="https://www.linkedin.com/in/huan-mai-1449ab187/" target="_blank"><AiOutlineLinkedin/></a>
       </p>
       <div className="contactContainer">
         <form ref={formRef} onSubmit={handleSubmit} className="contactForm">
