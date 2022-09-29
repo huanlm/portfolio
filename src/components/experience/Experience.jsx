@@ -15,12 +15,17 @@ function Experience() {
         </div>
         <div className="jobDesc">
           <h1> Jr. Software Engineer </h1>
-          <h3> Snapiot/Labcorp Drug Development (2020 - Current) <a href="https://drugdevelopment.labcorp.com" target="_blank"><TbExternalLink/></a></h3>
+          <h3> SnapIoT/Labcorp Drug Development (2020 - Current) <a href="https://drugdevelopment.labcorp.com" target="_blank"><TbExternalLink/></a></h3>
           <ul>
-            <li>Develop applications for clinical trials using SnapClinical infrastructure</li>
-            <li>Maintain software frontend and backend using Angular | JavaScript | Java Spring | MySQL</li>
-            <li>Create standard libraries and main applications to improve efficiency for future projects</li>
-            <li>Reponsible for quick turnaround on feature enhancement requests from client</li>
+            <li>Develop applications for clinical trials using SnapClinical infrastructure 
+              <ul>
+                <li>Use HTML, JavaScript and CSS to design responsive front-end for clinical applications</li>
+                <li>Use Flowable framework to create app flow diagrams and communicate with back-end</li>
+              </ul>
+            </li>
+            <li>Assist in maintaining SnapClinical codebase using Angular, JavaScript, Spring Boot and MySQL</li>
+            <li>Develop standard libraries and maintain applications to improve efficiency for future projects</li>
+            <li>Create pull requests to keep older environments up to date with newly developed features</li>
           </ul>
         </div>
       </div>
