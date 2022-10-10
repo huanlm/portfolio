@@ -9,7 +9,7 @@
 }
 
 .abTitle {
-  font-size: 3.5rem;
+  font-size: var(--section-title-fs);
   margin-bottom: 100px;
 }
 
@@ -59,7 +59,7 @@
   justify-content: flex-start;
   align-items: center;
   box-sizing: border-box;
-  padding: 25px;
+  padding: 25px 0 25px 0;
 }
 
 .technologies {

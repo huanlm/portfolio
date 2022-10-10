@@ -7,6 +7,7 @@
   --text-color: #ffffff;
   --forground-color: #5a5a5a7c;
   --content-max-width: 1024px;
+  --section-title-fs: 4rem;
   --section-max-height: 90vh;
 }
 
@@ -68,8 +69,6 @@
 }
 
 .sectionTitle {
-  font-size: 5.0rem !important;
-  background: #00aab3;
   background: -webkit-linear-gradient(to right, #b3005f, #00aaff);
   background: linear-gradient(to right, #b3005f, #00aaff);
   -webkit-background-clip: text;

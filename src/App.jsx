@@ -4,7 +4,7 @@ import About from './components/about/About';
 import Experience from './components/experience/Experience';
 import Contact from './components/contact/Contact';
 import Navbar from './components/navbar/Navbar';
-import Portfolio from './components/portfolio/Portfolio';
+import Projects from './components/projects/Projects';
 import { BsFillArrowUpCircleFill } from 'react-icons/bs';
 import { useEffect, useRef, useState } from 'react';
 import Particles from "react-tsparticles";
@@ -20,8 +20,8 @@ function App() {
   const isAboutVisible = useVisible(aboutRef)
   const experienceRef = useRef()
   const isExperienceVisible = useVisible(experienceRef)
-  const portfolioRef = useRef()
-  const isPortfolioVisible = useVisible(portfolioRef)
+  const projectsRef = useRef()
+  const isProjectsVisible = useVisible(projectsRef)
   const contactRef = useRef()
   const isContactVisible = useVisible(contactRef)
 
@@ -61,7 +61,7 @@ function App() {
         {/* <div className='separator'></div> */}
         <div ref={experienceRef} className={isExperienceVisible ? "section" : "section hidden"}><Experience /></div>
         {/* <div className='separator'></div> */}
-        <div ref={portfolioRef} className={isPortfolioVisible ? "section" : "section hidden"}><Portfolio /></div>
+        <div ref={projectsRef} className={isProjectsVisible ? "section" : "section hidden"}><Projects /></div>
         {/* <div className='separator'></div> */}
         <div ref={contactRef} className={isContactVisible ? "section" : "section hidden"}><Contact /></div>
         <button className="goTopButton" style={{ opacity }} onClick={() => { window.scrollTo(0, 0) }}><BsFillArrowUpCircleFill /></button>

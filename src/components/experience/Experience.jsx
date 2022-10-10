@@ -9,13 +9,14 @@ function Experience() {
     <div className="exPage" id="experience">
       <h1 className="exTitle sectionTitle">Experience</h1>
       <div className="exItems">
-        <div className="images">
+        <div className="imageWrapper">
           <img className="img1" src={snapWeb} alt="none" />
           <img className="img2" src={snapMobile} alt="none" />
         </div>
         <div className="jobDesc">
           <h1> Jr. Software Engineer </h1>
-          <h3> SnapIoT/Labcorp Drug Development (2020 - Current) <a href="https://drugdevelopment.labcorp.com" target="_blank"><TbExternalLink/></a></h3>
+          <h3> SnapIoT/Labcorp Drug Development (2020 - Current) <a href="https://drugdevelopment.labcorp.com" rel="noreferrer" target="_blank"><TbExternalLink/></a></h3>
+          
           <ul>
             <li>Develop applications for clinical trials using SnapClinical infrastructure 
               <ul>

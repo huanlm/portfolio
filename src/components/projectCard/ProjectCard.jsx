@@ -1,11 +1,12 @@
 import React from 'react'
-import './project.scss'
+import './projectCard.scss'
 import { useState } from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCircleArrowLeft,
   faCircleArrowRight,
   faCircleXmark,
+  faComputerMouse,
 } from "@fortawesome/free-solid-svg-icons";
 
 function Project({ project }) {
@@ -71,6 +72,11 @@ function Project({ project }) {
             alt=""
             onClick={() => handleOpen(0)}
           />
+         
+          <i><FontAwesomeIcon
+            icon={faComputerMouse}
+            onClick={() => handleOpen(0)}
+          /></i>
         </div>
         <p className="projDesc">
           {project.desc}

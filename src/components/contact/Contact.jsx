@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './contact.scss'
 import emailjs from 'emailjs-com'
 import { useRef } from 'react';
-import { MapContainer, TileLayer, CircleMarker, Popup, Marker, Circle } from 'react-leaflet'
+import { MapContainer, TileLayer, Popup, Circle } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
 import {AiFillCheckCircle, AiOutlineLinkedin, AiOutlineMail} from 'react-icons/ai'
 
@@ -32,10 +32,10 @@ function Contact() {
       <h1 className="contactTitle sectionTitle">
         Contact Me
       </h1>
-      <p>
-        <a href="mailto:huan.mai08@gmail.com" target="_blank"><AiOutlineMail/></a>
-        <a href="https://www.linkedin.com/in/huan-mai-1449ab187/" target="_blank"><AiOutlineLinkedin/></a>
-      </p>
+      <div className="links">
+        <a href="mailto:huan.mai08@gmail.com" target="_blank" rel="noreferrer"><AiOutlineMail/></a>
+        <a href="https://www.linkedin.com/in/huan-mai-1449ab187/" target="_blank" rel="noreferrer"><AiOutlineLinkedin/></a>
+      </div>
       <div className="contactContainer">
         <form ref={formRef} onSubmit={handleSubmit} className="contactForm">
           <input

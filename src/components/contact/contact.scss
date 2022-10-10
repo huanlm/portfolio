@@ -1,14 +1,14 @@
 .contactPage {
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 0px;
   box-sizing: border-box;
-  >p{
-    align-self: auto;
-    margin-bottom: 30px;
+  margin: auto;
+
+  .links{
+    padding: 30px 0 30px 0;
     >a {
       font-size: 2rem;
       border: 0px solid white;
@@ -34,29 +34,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3.5rem;
+  font-size: var(--section-title-fs);
   margin-bottom: 0px;
 }
 
 .contactContainer {
-  width: 90%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
   box-sizing: border-box;
 }
 
 .contactForm {
-  width: 100%;
+  width: 50%;
   border-radius: 20px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  flex: 0.7;
-}
+  padding: 10px;
 
-.contactForm {
   >input,
   textarea {
     padding: 20px;
@@ -120,31 +116,24 @@ input[type='name'] {
 }
 
 .leaflet-container {
-  height: 500px;
-  width: 95%;
+  height: 450px;
+  width: 100%;
   border-radius: 10px;
 }
 
 .map-wrap {
-  display: flex;
-  width: 90%;
-  height: 40%;
-  min-width: 300px;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  flex: 1;
-  box-sizing: border-box;
+  width: 50%;
   z-index: 1;
+  padding: 0 10px 10px 10px;
 }
 
 
-@media only screen and (max-width: 480px) {
-  .map-wrap {
-    width: 85%;
-    margin-top: 20px;
+@media only screen and (max-width: 880px) {
+  .map-wrap, .contactForm {
+    width: 100%;
+    margin-bottom: 20px;
   }
-  .contactForm {
-    flex: 1;
+  .contactContainer {
+    flex-wrap: wrap;
   }
 }

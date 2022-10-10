@@ -1,6 +1,6 @@
 .projCard {
-  width: 500px;
-  height: 550px;
+  height: fit-content;
+  width: 450px;
   display: flex;
   justify-content: top;
   flex-direction: column;
@@ -45,6 +45,7 @@
   align-items: center;
   margin-bottom: 30px;
   transition: 0.3s;
+  position: relative;
 
   >img {
     width: auto;
@@ -53,8 +54,13 @@
     height: 100%;
     cursor: pointer;
   }
-  &:hover {
-    transform: scale(1.05);
+
+  >i {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #02101F;
+    font-size: 30px;
   }
 }
 
@@ -62,8 +68,8 @@
   width: 100%;
   height: fit-content;
   max-height: 150px;
-  overflow: auto;
-  font-size: 0.9rem;
+  overflow: none;
+  font-size: 1rem;
 }
 
 .projLinksWrapper {
@@ -72,11 +78,11 @@
   justify-content: space-around;
   margin-right: auto;
   margin-top: auto;
-  box-sizing: border-box;
 }
 
 .projLink {
   margin-right: 10px;
+  margin-top: 20px;
   border-color: var(--text-color);
   background-color: rgba(0, 0, 0, 0.072);
   border-radius: 5px;
@@ -105,17 +111,19 @@
   width: 100%;
   margin-bottom: 10px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 
   &>span {
-    font-weight: bold;
+    font-weight: lighter;
     border-color: var(--text-color);
     border-radius: 5px;
     padding-left: 0;
-    margin: 0px 20px 0px 0px;
+    margin: 0px 20px 10px 0px;
     box-sizing: border-box;
+    border: 1px solid white;
+    padding: 3px;
   }
 }
 
@@ -173,7 +181,7 @@
 @media only screen and (max-width: 560px) {
   .projCard {
     width: 330px;
-    height: 530px;
+    height: fit-content;
 
     &:hover {
       transform: none;

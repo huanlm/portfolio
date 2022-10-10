@@ -17,9 +17,9 @@ function About() {
             <br />
             <div className="bio">My name is Huan Mai. I'm a passionate software developer based in San Diego, CA who loves to create software and solve new problems using new technologies.
               <br /><br />
-              <p style={{color:"grey"}}> I recently graduated from UCSD in 2020 major in Applied Mathematics and minor in Computer Science.
+              <p style={{color:"lightgrey"}}> I recently graduated from UCSD in 2020 major in Applied Mathematics and minor in Computer Science.
               <br /><br />
-              I currently have 2 years of experience in software development working with a small team of developers to create apps for clinical trials. During this experience, I can tell that my passion for coding and learning new technologies have grown exponentially and I cannot wait to experience what opportunity is ahead of me.</p>
+              I currently have 2 years of experience in software development working with a team of developers following Agile development principal to create Web/Android/iOS apps for clinical trials. During this experience, I can tell that my passion for coding and learning new technologies have grown exponentially and I cannot wait to experience what opportunity is ahead of me.</p>
             </div>
           </div>
           <div className="aboutPortrait">

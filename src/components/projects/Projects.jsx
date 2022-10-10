@@ -1,6 +1,6 @@
 import React from 'react'
-import Project from '../project/Project'
-import './portfolio.scss'
+import Project from '../projectCard/ProjectCard'
+import './projects.scss'
 
 function Portfolio() {
   const projects = [
@@ -18,7 +18,7 @@ function Portfolio() {
       icon: "https://i.imgur.com/ZZQ6Ga1.png"
     },
     {
-      name: "Front-End and Back-End/API Certification",
+      name: "FreeCodeCamp Software Development",
       desc: "Extensive courses from FreeCodeCamp regarding front-end and back-end developments. Along with multiple mini projects that this course requires to complete, it helps me understand fundamentals of full stack web development which affect greatly on how I perform at my job. ",
       links: [
         { 
@@ -32,7 +32,7 @@ function Portfolio() {
       ],
       images: ['https://i.imgur.com/dC8Ps89.png', 'https://i.imgur.com/HdM05Zy.png'],
       certification: true,
-      techs: ["React", "JavaScript", "CSS", "Node", "API", "Express", "MongoDB"],
+      techs: ["React", "NodeJS", "API", "Express", "MongoDB"],
       icon: "https://i.imgur.com/lud5QKy.png"
     },
     {

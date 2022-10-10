@@ -9,13 +9,13 @@
 }
 
 .projSectTitle {
-  font-size: 3.5rem;
-  margin-bottom: 100px;
+  font-size: var(--section-title-fs);
+  margin-bottom: 70px;
   text-align: center;
 }
 
 .projects{
-  width: 100%;
+  width: 90%;
   height: auto;
   display: flex;
   flex-direction: row;
