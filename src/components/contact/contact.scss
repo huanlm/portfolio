@@ -41,7 +41,6 @@
 .contactContainer {
   display: flex;
   justify-content: space-around;
-  align-items: center;
   box-sizing: border-box;
 }
 
@@ -124,7 +123,7 @@ input[type='name'] {
 .map-wrap {
   width: 50%;
   z-index: 1;
-  padding: 0 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
 }
 
 
